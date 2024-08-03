@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function Add()
+            {
+                var a=document.getElementById("t1").value;
+                var b=document.getElementById("t2").value;
+                var c=parseInt(a)+parseInt(b);
+                document.getElementById("t3").value=c;
+            }
+            function Sub()
+            {
+                var a=document.getElementById("t1").value;
+                var b=document.getElementById("t2").value;
+                var c=a-b;
+                document.getElementById("t3").value=c;
+            }
+            function Mul()
+            {
+                var a=document.getElementById("t1").value;
+                var b=document.getElementById("t2").value;
+                var c=a*b;
+                document.getElementById("t3").value=c;
+            }
+            function Div()
+            {
+                var a=document.getElementById("t1").value;
+                var b=document.getElementById("t2").value;
+                var c=a/b;
+                document.getElementById("t3").value=c;
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Js demo calulator</h1>
+        <hr color="red">
+        <form>
+            <center>
+                Enter first No:<input type="text" id="t1"/><br/>
+                Enter secound No:<input type="text" id="t2"/><br/>
+                <input type="button" value="ADD" onclick="Add();"/> &nbsp;&nbsp;&nbsp;
+                <input type="button" value="SUB" onclick="Sub();"/> &nbsp;&nbsp;&nbsp;
+                <input type="button" value="MUL" onclick="Mul();"/> &nbsp;&nbsp;&nbsp;
+                <input type="button" value="DIV" onclick="Div();"/> &nbsp;&nbsp;&nbsp;
+                result:<input type="text" id="t3"/><br/>
+            </center>
+        </form>
+    </body>
+</html>
